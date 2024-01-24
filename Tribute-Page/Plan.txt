@@ -1,0 +1,127 @@
+Tribute page
+-------------------
+Tribute on Desmond Tutu
+
+
+Tasks
+-----------
+Reseacrh Desmond Tutu
+include africa home audio or video
+timeline of desmonds life and his achievments
+link to nobel peace prize
+" Arch-Bishop Desmond Tutu, a universally beloved figure in South Africa, is known for his infectious smile and serves as a living embodiment of the South African dream in the spirit of Ubuntu."
+ "Do your little bit of good where you are; its those little bits of good put together that overwhelm the world."
+Desmond Tutu 
+
+
+
+    1931, October 7: Desmond Mpilo Tutu is born in Klerksdorp, a city in the North West Province of South Africa.
+
+    1953: Tutu begins his studies at the University of Fort Hare, but his education is interrupted by political activism.
+
+    1958: Tutu marries Nomalizo Leah Shenxane.
+
+    1960: He resumes his studies and graduates from the University of South Africa.
+
+    1961-1962: Tutu teaches at Munsieville High School in Krugersdorp.
+
+    1962-1966: He studies theology in the United Kingdom at King's College London and later at the University of London.
+
+    1967: Tutu returns to South Africa and is ordained as a priest.
+
+    1978-1985: Tutu serves as the Bishop of Lesotho.
+
+    1984: He is awarded the Nobel Peace Prize for his nonviolent struggle against apartheid.
+
+    1986-1996: Tutu becomes the first black Archbishop of Cape Town and bishop of the Church of the Province of Southern Africa (now the Anglican Church of Southern Africa).
+
+    1995-1999: Tutu chairs the Truth and Reconciliation Commission in post-apartheid South Africa.
+
+    1996: He retires from the position of Archbishop of Cape Town.
+
+    2009: Tutu announces his retirement from public life.
+
+    2021, December 26: Archbishop Desmond Tutu passes away at the age of 90 in Cape Town, South Africa.
+
+
+    https://desmondtutuhealthfoundation.org.za/ --- donate link
+
+    <iframe> a youtube link to a desmond video.
+
+    --------------------------------------------------------------------------------------------
+
+
+    Layout
+    ------------
+    
+    Head -- 
+
+    Archbishop desmond tutu with a line 12 underneath with a backround at the top 
+
+  
+  
+  
+  
+   Picture --
+
+   Picture of desmond with line 13 quote 
+
+   our #image should use max-width and height properties to resize responsively, relative to the width of its parent element, without exceeding its original size
+Your img element should be centered within its parent element
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   Charity section --
+
+   Use long image as backround with a link/button to his foundation,
+   Add text about foundation with a header and paragraph
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   Video --
+
+   embed a video with ifram and next to it have a quote of the video 
+https://youtu.be/cwF7_QHs7aY?si=zrkvmUfsOlKKNU9I
+   "You want a leader who is also a servant"
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   Timeline -- /* use id="tribute-inf */  You should see an <a element with a corresponding id="tribute-link"
+
+   Bullet timeline and a link to his wikipidea   set a class or maybe a div for the list to set the date bold
+link to his wiki : https://en.wikipedia.org/wiki/Desmond_Tutu.
+   
+   
+   
+   
+   
+   
+   
+   
+   Footer --
+
+   maybe something about why this tribute page was close to my heart building along with maybe contact info or link to my linkedin
+
+
