@@ -55,46 +55,48 @@
           /></label>
           <!-- Its better to set type to text so you can enter + numbers -->
         </fieldset>
-        <fieldset id="Rating">
-          <legend class="legend">Experience Score</legend>
-          <label for="dropdown">
-            Rate your experience:
-            <select id="dropdown" name="dropdown">
-              <option value="select">(Please select 1-5)</option>
-              <option value="1">1-Poor</option>
-              <option value="2">2-Below Average</option>
-              <option value="3">3-Average</option>
-              <option value="4">4-Good</option>
-              <option value="5">5-Very Good</option>
-            </select>
-          </label>
-        </fieldset>
-        <fieldset id="contact-pref">
-          <legend class="legend">
-            Would you like to be contacted by a member of our team?
-          </legend>
-          <label for="yes" class="inline"
-            ><input
-              id="yes"
-              type="radio"
-              name="preference"
-              class="preference"
-              value="yes"
-            />
-            Yes!</label
-          >
-          <label for="no" class="inline"
-            ><input
-              id="no"
-              type="radio"
-              name="preference"
-              class="preference"
-              value="no"
-              checked
-            />
-            No!</label
-          >
-        </fieldset>
+        <div class="container-2">
+          <fieldset id="Rating">
+            <legend class="legend">Experience Score</legend>
+            <label for="dropdown">
+              Rate your experience:
+              <select id="dropdown" name="dropdown">
+                <option value="select">(Please select 1-5)</option>
+                <option value="1">1-Poor</option>
+                <option value="2">2-Below Average</option>
+                <option value="3">3-Average</option>
+                <option value="4">4-Good</option>
+                <option value="5">5-Very Good</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset id="contact-pref">
+            <legend class="legend">
+              Would you like to be contacted by a member of our team?
+            </legend>
+            <label for="yes" class="inline"
+              ><input
+                id="yes"
+                type="radio"
+                name="preference"
+                class="preference"
+                value="yes"
+              />
+              Yes!</label
+            >
+            <label for="no" class="inline"
+              ><input
+                id="no"
+                type="radio"
+                name="preference"
+                class="preference"
+                value="no"
+                checked
+              />
+              No!</label
+            >
+          </fieldset>
+        </div>
         <fieldset id="improvements">
           <legend class="legend">
             What would you like to see improved?<span class="clue"
@@ -175,7 +177,9 @@
           /></label>
         </fieldset>
       </div>
-      <input id="submit" type="submit" value="Submit" />
+      <button id="button">
+        <input id="submit" type="submit" value="Submit" />
+      </button>
     </form>
     <footer>
       <p>This page was created by John Mellet</p>

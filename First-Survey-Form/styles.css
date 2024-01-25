@@ -42,6 +42,8 @@ form {
 
 .form-data {
   display: grid;
+  height: 70vh;
+  height: 70dvh;
 }
 
 footer {
@@ -53,4 +55,55 @@ footer {
   display: flex;
   justify-content: space-evenly;
   margin: auto;
+}
+
+#personal-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#improvements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#addinfo {
+  width: 100%; /* Take up 100% of the container width */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px; /* Set a minimum height */
+  font-size: 16px; /* Adjust font size based on your preference */
+}
+
+#addinfo {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#button,
+#submit {
+  background-color: #f5f9f5;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+#button {
+  border: 1px solid white;
+}
+
+#personal-info {
+  border: 5px solid;
 }
