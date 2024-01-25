@@ -32,6 +32,7 @@ form {
   height: 90vh;
   height: 90dvh;
   margin: auto;
+  overflow-y: auto;
 }
 
 #title,
