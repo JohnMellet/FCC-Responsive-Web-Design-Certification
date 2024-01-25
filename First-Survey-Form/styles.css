@@ -4,3 +4,52 @@
   --form-text-color: ;
   --input-color ;
 } */
+
+/* use this grid template stack instead of a background image https://youtu.be/JHregeIsjPQ?si=J_lmqTD9vLcvfb_C */
+
+body {
+  background-color: #000000;
+  color: #ece4e4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  height: 100dvh;
+}
+
+fieldset {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+form {
+  background-color: #5952524e;
+  border: 5px solid white;
+  width: 80vw;
+  min-width: 300px;
+  height: 90vh;
+  height: 90dvh;
+  margin: auto;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+.form-data {
+  display: grid;
+}
+
+footer {
+  height: 10vh;
+  height: 10dvh;
+  width: 80vw;
+  width: 80dvw;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}

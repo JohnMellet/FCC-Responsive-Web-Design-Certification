@@ -13,138 +13,168 @@
         Thank you for taking the time to fill out our survey. Your feedback is
         incredibly valuable to us as we strive to enhance your experience.
       </p>
-      <fieldset id="personal-info">
-        <legend class="legend">Personal Information</legend>
-        <label for="name" id="name-label">
-          Enter your first name:
-          <input
-            id="name"
-            name="name"
-            type="text"
-            placeholder="Fill required fields*"
-            required
-        /></label>
-        <label for="last-name" id="lastname-label">
-          Enter your last name:
-          <input
-            id="last-name"
-            name="last name"
-            type="text"
-            placeholder="Fill required fields*"
-            required
-        /></label>
-        <label for="email" id="email-label">
-          Enter your email:
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Fill required fields*"
-            required
-        /></label>
-        <label for="number" id="number-label">
-          Enter your number:
-          <input
-            id="number"
-            name="number"
-            type="number"
-            pattern="07\d{9}"
-            placeholder="Fill required fields*"
-            required
-        /></label>
-        <!-- Its better to set type to text so you can enter + numbers -->
-      </fieldset>
-      <fieldset id="Rating">
-        <legend class="legend">Experience Score</legend>
-        <label for="dropdown">
-          Rate your experience:
-          <select id="dropdown" name="dropdown">
-            <option value="select">(Please select 1-5)</option>
-            <option value="1">1-Poor</option>
-            <option value="2">2-Below Average</option>
-            <option value="3">3-Average</option>
-            <option value="4">4-Good</option>
-            <option value="5">5-Very Good</option>
-          </select>
-        </label>
-      </fieldset>
-      <fieldset id="contact-pref">
-        <legend class="legend">
-          Would you like to be contacted by a member of our team?
-        </legend>
-        <label for="yes" class="inline"
-          ><input
-            id="yes"
-            type="radio"
-            name="preference"
-            class="preference"
-            value="yes"
-          />
-          Yes!</label
-        >
-        <label for="no" class="inline"
-          ><input
-            id="no"
-            type="radio"
-            name="preference"
-            class="preference"
-            value="no"
-            checked
-          />
-          No!</label
-        >
-      </fieldset>
-      <fieldset id="improvements">
-        <legend class="legend">
-          What would you like to see improved?<span class="clue"
-            >(Check all that apply)</span
+      <div class="form-data">
+        <fieldset id="personal-info">
+          <legend class="legend">Personal Information</legend>
+          <label for="name" id="name-label">
+            Enter your first name:
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Fill required fields*"
+              required
+          /></label>
+          <label for="last-name" id="lastname-label">
+            Enter your last name:
+            <input
+              id="last-name"
+              name="last name"
+              type="text"
+              placeholder="Fill required fields*"
+              required
+          /></label>
+          <label for="email" id="email-label">
+            Enter your email:
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Fill required fields*"
+              required
+          /></label>
+          <label for="number" id="number-label">
+            Enter your phone number:
+            <input
+              id="number"
+              name="number"
+              type="text"
+              pattern="(\+44\s\d{10})|(\(\d{5}\)\s\d{6})|(0\s\d{10})"
+              placeholder="+44 7123456789*"
+              required
+          /></label>
+          <!-- Its better to set type to text so you can enter + numbers -->
+        </fieldset>
+        <fieldset id="Rating">
+          <legend class="legend">Experience Score</legend>
+          <label for="dropdown">
+            Rate your experience:
+            <select id="dropdown" name="dropdown">
+              <option value="select">(Please select 1-5)</option>
+              <option value="1">1-Poor</option>
+              <option value="2">2-Below Average</option>
+              <option value="3">3-Average</option>
+              <option value="4">4-Good</option>
+              <option value="5">5-Very Good</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset id="contact-pref">
+          <legend class="legend">
+            Would you like to be contacted by a member of our team?
+          </legend>
+          <label for="yes" class="inline"
+            ><input
+              id="yes"
+              type="radio"
+              name="preference"
+              class="preference"
+              value="yes"
+            />
+            Yes!</label
           >
-        </legend>
-        <label for="check-1"
-          >Food Qaulity
-          <input class="inline" name="check-1" type="checkbox" value="check-1"
-        /></label>
-        <label for="check-2"
-          >Service Speed
-          <input class="inline" name="check-2" type="checkbox" value="check-2"
-        /></label>
-        <label for="check-3"
-          >Menu Variety
-          <input class="inline" name="check-3" type="checkbox" value="check-3"
-        /></label>
-        <label for="check-4"
-          >Cleanliness
-          <input class="inline" name="check-4" type="checkbox" value="check-4"
-        /></label>
-        <label for="check-5"
-          >Ambience
-          <input class="inline" name="check-5" type="checkbox" value="check-5"
-        /></label>
-        <label for="check-6"
-          >Customer Service
-          <input class="inline" name="check-6" type="checkbox" value="check-6"
-        /></label>
-        <label for="check-7"
-          >Value for Money
-          <input class="inline" name="check-7" type="checkbox" value="check-7"
-        /></label>
-      </fieldset>
-      <fieldset id="add-info">
-        <legend class="legend">Additional information</legend>
-        <label for="addinfo"
-          >Is there anything you would like to add?
-          <textarea
-            id="addinfo"
-            name="addinfo"
-            rows="3"
-            cols="30"
-            placeholder="Enter additional text here"
-          ></textarea>
-        </label>
-        <label for="image"
-          >Add image if required: <input id="image" type="file" name="image"
-        /></label>
-      </fieldset>
+          <label for="no" class="inline"
+            ><input
+              id="no"
+              type="radio"
+              name="preference"
+              class="preference"
+              value="no"
+              checked
+            />
+            No!</label
+          >
+        </fieldset>
+        <fieldset id="improvements">
+          <legend class="legend">
+            What would you like to see improved?<span class="clue"
+              >(Check all that apply)</span
+            >
+          </legend>
+          <label for="check-1"
+            >Food Qaulity
+            <input
+              class="inline"
+              name="check-1"
+              type="checkbox"
+              value="check-1"
+          /></label>
+          <label for="check-2"
+            >Service Speed
+            <input
+              class="inline"
+              name="check-2"
+              type="checkbox"
+              value="check-2"
+          /></label>
+          <label for="check-3"
+            >Menu Variety
+            <input
+              class="inline"
+              name="check-3"
+              type="checkbox"
+              value="check-3"
+          /></label>
+          <label for="check-4"
+            >Cleanliness
+            <input
+              class="inline"
+              name="check-4"
+              type="checkbox"
+              value="check-4"
+          /></label>
+          <label for="check-5"
+            >Ambience
+            <input
+              class="inline"
+              name="check-5"
+              type="checkbox"
+              value="check-5"
+          /></label>
+          <label for="check-6"
+            >Customer Service
+            <input
+              class="inline"
+              name="check-6"
+              type="checkbox"
+              value="check-6"
+          /></label>
+          <label for="check-7"
+            >Value for Money
+            <input
+              class="inline"
+              name="check-7"
+              type="checkbox"
+              value="check-7"
+          /></label>
+        </fieldset>
+        <fieldset id="add-info">
+          <legend class="legend">Additional information</legend>
+          <label for="addinfo"
+            >Is there anything you would like to add?
+            <textarea
+              id="addinfo"
+              name="addinfo"
+              rows="3"
+              cols="30"
+              placeholder="Enter additional text here"
+            ></textarea>
+          </label>
+          <label for="image"
+            >Add image if required: <input id="image" type="file" name="image"
+          /></label>
+        </fieldset>
+      </div>
       <input id="submit" type="submit" value="Submit" />
     </form>
     <footer>
