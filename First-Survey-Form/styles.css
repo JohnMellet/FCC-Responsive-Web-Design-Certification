@@ -13,6 +13,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 100vh;
   height: 100dvh;
+  font-size: 16px;
 }
 
 fieldset {
@@ -24,13 +25,18 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: blue;
+  font-size: 1.5rem;
+}
+
 form {
   background-color: #5952524e;
   border: 5px solid white;
   width: 80vw;
   min-width: 300px;
-  height: 90vh;
-  height: 90dvh;
+  height: 95vh;
+  height: 95dvh;
   margin: auto;
   overflow-y: auto;
 }
@@ -62,26 +68,31 @@ footer {
   grid-template-columns: repeat(4, 1fr);
 }
 
+#personal-info label {
+  display: flex;
+  flex-direction: column; /* Arrange label and input vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text within label */
+}
+
 .container-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  border-bottom: 5px solid;
 }
 
 #improvements {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  border-bottom: 5px solid;
 }
 
 #addinfo {
-  width: 100%; /* Take up 100% of the container width */
-  box-sizing: border-box; /* Include padding and border in the width calculation */
-  resize: vertical; /* Allow vertical resizing */
-  min-height: 100px; /* Set a minimum height */
-  font-size: 16px; /* Adjust font size based on your preference */
-}
-
-#addinfo {
-  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 100px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 15px;
@@ -100,10 +111,17 @@ footer {
   margin: auto;
 }
 
-#button {
-  border: 1px solid white;
+#button,
+#personal-info,
+.survey-title {
+  border-bottom: 5px solid white;
 }
 
-#personal-info {
-  border: 5px solid;
+legend {
+  font-size: 1.3rem;
+}
+
+.inline {
+  display: flex;
+  cursor: pointer;
 }
