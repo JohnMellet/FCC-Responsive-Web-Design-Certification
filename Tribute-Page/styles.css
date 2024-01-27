@@ -19,8 +19,15 @@ a {
   height: 10vh;
   background-color: #333333;
   position: fixed;
-  top: 0;
   width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #nav-img img {
@@ -30,7 +37,7 @@ a {
   width: 15dvw;
 }
 
-footer {
+/* footer {
   background-color: #333;
   color: white;
   height: 10vh;
@@ -40,6 +47,41 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* Section-1 */
+
+#img-div {
+  padding-top: 11vh;
+  display: grid;
+  display: grid;
+
+  grid-template-rows: 10vh 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  background-image: url(http://s1.bwallpapers.com/wallpapers/2014/05/29/south-africa-flag_121415453.jpg);
+  height: 100vh;
+}
+
+#image1 {
+  height: 30vh;
+  height: 30dvh;
+  width: 20dvw;
+  width: 20dvw;
+}
+
+#text-container {
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 3;
+}
+
+#image-container {
+  justify-self: center;
+  align-self: center;
+}
+
+#img-text {
+}
