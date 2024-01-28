@@ -1,6 +1,12 @@
 /* image alt for foundation - https://desmondtutuhealthfoundation.org.za/wp-content/uploads/2020/07/114x114-Desmond-Tutu-Health-Foundation-Logo.png */
 /* image alt for sa flag -  */
 
+:root {
+  --Font-color1: beige;
+  --Font-color2: white;
+  --Background: #333333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +17,21 @@
 a {
   text-decoration: none;
   color: black;
+}
+
+/* Main */
+
+body {
+  background-image: url(http://s1.bwallpapers.com/wallpapers/2014/05/29/south-africa-flag_121415453.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 /* Navbar */
@@ -28,6 +49,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+
+#nav-links a {
+  color: var(--Font-color1);
 }
 
 #nav-img img {
@@ -59,7 +86,6 @@ a {
   grid-template-rows: 10vh 1fr;
   grid-template-columns: 1fr 1fr;
 
-  background-image: url(http://s1.bwallpapers.com/wallpapers/2014/05/29/south-africa-flag_121415453.jpg);
   height: 100vh;
 }
 
@@ -69,6 +95,8 @@ a {
   width: 40dvw;
   width: 40dvw;
   border-radius: 50px;
+  margin-top: 7vh;
+  margin-left: 4vw;
 }
 
 #text-container {
@@ -78,22 +106,24 @@ a {
   grid-row-end: 2;
   grid-column-end: 3;
   border: 2px solid white;
+  border-radius: 10px;
+  background: var(--Background);
   margin-left: 3vw;
   margin-right: 3vw;
   justify-self: center;
+  height: 15vh;
 }
 
-#name,
+.fa-quote-left::before {
+  color: var(--Font-color2);
+}
+
+.fa-quote-right::after {
+  color: var(--Font-color2);
+}
+
 #first-text {
-  text-align: center;
-}
-
-#image-container {
-  justify-self: center;
-  align-self: center;
-  padding: 2vh;
-  background: #38303045;
-  border-radius: 50px;
+  font-size: 1.5rem;
 }
 
 #img-text {
@@ -103,4 +133,80 @@ a {
   padding: 1vh;
   margin-right: 5vw;
   margin-left: 1vw;
+  font-size: 2rem;
+}
+
+.title {
+  color: var(--Font-color1);
+  text-align: center;
+}
+
+.text {
+  color: var(--Font-color2);
+  text-align: center;
+}
+
+/* Section 2 */
+
+#charity {
+  height: 70vh;
+  padding-top: 10vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  gap: 0px;
+  height: 100vh;
+}
+
+#dtitle {
+  background-color: #7589d7;
+  grid-row-start: 1;
+  grid-column-start: 2;
+
+  grid-row-end: 5;
+  grid-column-end: 6;
+
+  color: var(--Font-color1);
+  font-size: 3rem;
+  margin: auto;
+}
+
+#dtext {
+  background-color: #bc95bd;
+  grid-row-start: 5;
+  grid-column-start: 2;
+
+  grid-row-end: 13;
+  grid-column-end: 6;
+
+  font-size: 1.1rem;
+  margin: auto;
+}
+
+#donate {
+  background-color: #95cfda;
+  grid-row-start: 9;
+  grid-column-start: 7;
+
+  grid-row-end: 11;
+  grid-column-end: 12;
+}
+
+#video {
+  grid-row-start: 1;
+  grid-column-start: 6;
+
+  grid-row-end: 8;
+  grid-column-end: 13;
+
+  margin: auto;
+}
+
+iframe {
+  height: 45vh;
+  height: 45dvh;
+  width: 70vw;
+  width: 70dvh;
+  border-radius: 10px;
 }
