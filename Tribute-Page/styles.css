@@ -160,41 +160,44 @@ h1 {
 }
 
 #dtitle {
-  background-color: #7589d7;
+  background: var(--Background);
   grid-row-start: 1;
-  grid-column-start: 2;
+  grid-column-start: 1;
 
-  grid-row-end: 5;
-  grid-column-end: 6;
+  grid-row-end: 3;
+  grid-column-end: 13;
 
   color: var(--Font-color1);
   font-size: 3rem;
-  margin: auto;
 }
 
 #dtext {
-  background-color: #bc95bd;
-  grid-row-start: 5;
-  grid-column-start: 2;
+  background: var(--Background);
+  grid-row-start: 3;
+  grid-column-start: 1;
 
   grid-row-end: 13;
   grid-column-end: 6;
 
   font-size: 1.1rem;
-  margin: auto;
+  margin-left: 3vw;
+  margin-left: 3dvw;
+
+  display: grid;
 }
 
 #donate {
-  background-color: #95cfda;
   grid-row-start: 9;
-  grid-column-start: 7;
+  grid-column-start: 6;
 
-  grid-row-end: 11;
-  grid-column-end: 12;
+  grid-row-end: -1;
+  grid-column-end: 13;
+
+  margin: auto;
 }
 
 #video {
-  grid-row-start: 1;
+  grid-row-start: 3;
   grid-column-start: 6;
 
   grid-row-end: 8;
@@ -210,3 +213,40 @@ iframe {
   width: 70dvh;
   border-radius: 10px;
 }
+
+h2 {
+  align-self: center;
+  margin-left: 3vw;
+  margin-left: 3dvw;
+}
+
+.ftext {
+  color: var(--Font-color2);
+  margin: auto;
+}
+
+.dtitle {
+  color: var(--Font-color1);
+  align-self: end;
+}
+
+.dtext {
+  color: var(--Font-color2);
+}
+
+#donate a {
+  color: var(--Font-color1);
+}
+
+#button {
+  padding: 5vh;
+  background: var(--Background);
+  color: var(--Font-color2);
+}
+
+#button a {
+  color: var(--Font-color1);
+  font-size: 2rem;
+}
+
+/* Section 3 */
