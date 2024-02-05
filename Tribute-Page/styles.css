@@ -10,6 +10,7 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -22,7 +23,7 @@ a {
 /* Main */
 
 body {
-  background-image: url(http://s1.bwallpapers.com/wallpapers/2014/05/29/south-africa-flag_121415453.jpg);
+  background-image: url(https://s1.bwallpapers.com/wallpapers/2014/05/29/south-africa-flag_121415453.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -60,8 +61,9 @@ h1 {
 #nav-img img {
   height: 10vh;
   height: 10dvh;
-  width: 15vw;
-  width: 15dvw;
+  width: 8vw;
+  width: 8dvw;
+  background: white;
 }
 
 /* footer {
@@ -250,3 +252,7 @@ h2 {
 }
 
 /* Section 3 */
+
+/* "https://karsh.org/wordpress/wp-content/uploads/2020/10/Yousuf-Karsh-Desmond-Tutu-1984-1568x1960.jpg" */
+
+/* "Images/Image4.jpg" */
