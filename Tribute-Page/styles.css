@@ -66,18 +66,6 @@ h1 {
   background: white;
 }
 
-/* footer {
-  background-color: #333;
-  color: white;
-  height: 10vh;
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 /* Section-1 */
 
 #img-div {
@@ -156,7 +144,6 @@ h1 {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
   gap: 0px;
   height: 100vh;
 }
@@ -165,10 +152,8 @@ h1 {
   background: var(--Background);
   grid-row-start: 1;
   grid-column-start: 1;
-
   grid-row-end: 3;
   grid-column-end: 13;
-
   color: var(--Font-color1);
   font-size: 3rem;
 }
@@ -177,34 +162,27 @@ h1 {
   background: var(--Background);
   grid-row-start: 3;
   grid-column-start: 1;
-
   grid-row-end: 13;
   grid-column-end: 6;
-
   font-size: 1.1rem;
   margin-left: 3vw;
   margin-left: 3dvw;
-
   display: grid;
 }
 
 #donate {
   grid-row-start: 9;
   grid-column-start: 6;
-
   grid-row-end: -1;
   grid-column-end: 13;
-
   margin: auto;
 }
 
 #video {
   grid-row-start: 3;
   grid-column-start: 6;
-
   grid-row-end: 8;
   grid-column-end: 13;
-
   margin: auto;
 }
 
@@ -249,6 +227,63 @@ h2 {
 #button a {
   color: var(--Font-color1);
   font-size: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #charity {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+  }
+
+  #dtitle {
+    grid-row-start: auto;
+    grid-column-start: auto;
+    grid-row-end: auto;
+    grid-column-end: auto;
+    font-size: 2rem;
+  }
+
+  #dtext {
+    grid-row-start: auto;
+    grid-column-start: auto;
+    grid-row-end: auto;
+    grid-column-end: auto;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  #video {
+    grid-row-start: auto;
+    grid-column-start: auto;
+    grid-row-end: auto;
+    grid-column-end: auto;
+    margin: 0;
+  }
+
+  #donate {
+    grid-row-start: auto;
+    grid-column-start: auto;
+    grid-row-end: auto;
+    grid-column-end: auto;
+    margin: 0;
+  }
+
+  iframe {
+    height: auto;
+    width: 100%;
+  }
+
+  h2 {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  #button {
+    padding: 3vh;
+    font-size: 1.5rem;
+  }
 }
 
 /* Section 3 */
