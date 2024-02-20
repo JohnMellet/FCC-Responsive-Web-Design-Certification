@@ -4,7 +4,7 @@
 :root {
   --Font-color1: beige;
   --Font-color2: white;
-  --Background: #333333;
+  --Background: #33383c;
 }
 
 * {
@@ -17,7 +17,6 @@
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 /* Main */
@@ -28,18 +27,13 @@ body {
   background-attachment: fixed;
   background-position: center;
   height: 100vh;
-  font-size: 16px;
-}
-
-h1 {
-  font-size: 40px;
 }
 
 /* Navbar */
 
 #nav-bar {
   height: 10vh;
-  background-color: #333333;
+  background-color: var(--Background);
   position: fixed;
   width: 100vw;
   display: grid;
@@ -220,7 +214,7 @@ h2 {
 
 #button {
   padding: 5vh;
-  background: var(--Background);
+  background: #e6a13e;
   color: var(--Font-color2);
 }
 
