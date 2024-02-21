@@ -2,9 +2,13 @@
 /* image alt for sa flag -  */
 
 :root {
-  --Font-color1: beige;
-  --Font-color2: white;
-  --Background: #33383c;
+  --Font-color1: #f9f1d9; /* beige */
+  --Font-color2: #f0ece3; /* white */
+  --Background: #0a0e2f; /* #33383c */
+  --Background2: rgba(255, 255, 255, 0.206); /* rgba(255, 255, 255, 0.206) */
+  --Title: "Kode Mono";
+  --Text1: "Fredoka";
+  --Text2: "Raleway";
 }
 
 * {
@@ -70,18 +74,113 @@ body {
   background: white;
 }
 
+.nav-link {
+  font-family: var(--Title);
+}
+
 /* Section-1 */
 
+#Section-1 {
+  padding-top: 10vh;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  height: 100vh;
+  background-color: var(--Background2);
+}
+
+#Sec1-title {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 13;
+}
+#Sec1-image-container {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 13;
+  grid-column-end: 6;
+  margin-left: 3vw;
+  margin-left: 3dvw;
+}
+#Sec1-text {
+  grid-row-start: 3;
+  grid-column-start: 6;
+  grid-row-end: 10;
+  grid-column-end: 13;
+}
+#Sec1-quote-container {
+  grid-row-start: 8;
+  grid-column-start: 6;
+  grid-row-end: -1;
+  grid-column-end: 13;
+}
+
+h1 {
+  color: var(--Font-color1);
+  background-color: var(--Background);
+  font-family: var(--Text1);
+  font-size: 3rem;
+  border: 5px solid var(--Font-color1);
+  border-radius: 10px;
+  width: 70vw;
+  text-align: center;
+  margin: auto;
+  margin-top: 2vh;
+  padding: 10px;
+}
+
+#image1 {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 5px solid var(--Font-color1);
+  background-color: var(--Background);
+}
+
+.t1 {
+  color: var(--Font-color2);
+  background-color: var(--Background);
+  font-family: var(--Text2);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border: 5px solid var(--Font-color1);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  line-height: 2rem;
+}
+
+#Sec1-quote {
+  font-size: 2.5rem;
+  height: 96%;
+  margin-top: 15px;
+  border: 5px solid var(--Font-color1);
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+#Sec1-quote {
+  background-image: url("https://raw.githubusercontent.com/JohnMellet/Img-hosting/main/PubIMG/image7.jpg");
+  background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 /* Section 2 */
 
 #charity {
   height: 70vh;
   padding-top: 10vh;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
   height: 100vh;
+  background-color: var(--Background2);
 }
 
 #dtitle {
