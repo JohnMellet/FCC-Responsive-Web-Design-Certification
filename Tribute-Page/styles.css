@@ -226,6 +226,11 @@ h1 {
   grid-column-end: 13;
   color: var(--Font-color1);
   font-size: 3rem;
+  border: 5px solid var(--Font-color1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #dtext {
@@ -238,6 +243,10 @@ h1 {
   margin-left: 3vw;
   margin-left: 3dvw;
   display: grid;
+  align-items: center;
+  border: 5px solid var(--Font-color1);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 #donate {
@@ -246,6 +255,9 @@ h1 {
   grid-row-end: -1;
   grid-column-end: 13;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #video {
@@ -254,6 +266,9 @@ h1 {
   grid-row-end: 8;
   grid-column-end: 13;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 iframe {
@@ -262,6 +277,7 @@ iframe {
   width: 70vw;
   width: 70dvh;
   border-radius: 10px;
+  border: 5px solid var(--Font-color1);
 }
 
 h2 {
@@ -286,6 +302,17 @@ h2 {
 
 #donate a {
   color: var(--Font-color1);
+}
+
+#button {
+  padding: 5vh;
+  background: #e6a13e;
+  color: var(--Font-color2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 5px solid var(--Font-color1);
 }
 
 #button {
