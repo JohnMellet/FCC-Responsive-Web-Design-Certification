@@ -45,33 +45,230 @@
     <main id="main-doc">
       <section id="introduction-to-html">
         <header>Introduction to HTML</header>
+        <article>
+          <p>
+            HTML, which stands for HyperText Markup Language, is the standard
+            markup language for creating web pages and web applications. It was
+            created by Tim Berners-Lee in the early 1990s as a means to
+            structure and organize documents on the World Wide Web.
+          </p>
+          <p>
+            HTML forms the backbone of web development, providing the structure
+            and semantics necessary for presenting content on the web. It works
+            in conjunction with other technologies such as CSS (Cascading Style
+            Sheets) for styling and JavaScript for interactivity, forming the
+            core technologies of the web.
+          </p>
+        </article>
       </section>
       <section id="basic-structure-of-an-html-document">
         <header>Basic Structure of an HTML Document</header>
+        <article>
+          <p>
+            &lt;!DOCTYPE html&gt; declaration: This declaration defines the
+            document type and version of HTML being used. In modern web
+            development, &lt;!DOCTYPE html&gt; is used to specify HTML5.
+          </p>
+          <p>
+            &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; tags: The &lt;html&gt;
+            tag represents the root of an HTML document. The &lt;head&gt; tag
+            contains meta-information about the document, such as title, links
+            to stylesheets, and scripts. The &lt;body&gt; tag contains the
+            content of the document that is displayed in the browser.
+          </p>
+          <code>
+            &lt;!DOCTYPE html&gt;<br />
+            &lt;html&gt;<br />
+            &lt;head&gt;<br />
+            &lt;title&gt;Document Title&lt;/title&gt;<br />
+            &lt;/head&gt;<br />
+            &lt;body&gt;<br />
+            &lt;h1&gt;Hello, World!&lt;/h1&lt;/p&gt;<br />
+            &lt;p&gt;This is a basic HTML document.&lt;/p&gt;<br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;<br />
+          </code>
+        </article>
       </section>
       <section id="html-elements">
         <header>HTML Elements</header>
+        <article>
+          <p>
+            HTML elements are the building blocks of web pages, defined by tags
+            enclosed in angle brackets "(&lt;&gt;)". Tags can have attributes,
+            which provide additional information about the element.
+          </p>
+          <p>Commonly used HTML elements</p>
+          <ol>
+            <li>
+              Headings (&lt;h1&gt; to &lt;h6&gt;):
+              <ul>
+                <li>
+                  Headings are used to define the structure and hierarchy of a
+                  document's content.
+                </li>
+                <li>
+                  &lt;h1&gt; is the highest level of heading, typically used for
+                  main headings or titles.
+                </li>
+                <li>
+                  &lt;h6&gt; is the lowest level of heading, used for
+                  subheadings or minor titles.
+                </li>
+                <li>
+                  Headings are essential for accessibility and search engine
+                  optimization (SEO) as they provide semantic meaning to the
+                  content.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Paragraphs (&lt;p&gt;):
+              <ul>
+                <li>&lt;p&gt; element is used to define paragraphs of text.</li>
+                <li>
+                  It represents a block of text with normal spacing and line
+                  breaks.
+                </li>
+                <li>
+                  Paragraphs are commonly used for body text, article content,
+                  and any other text-based content.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Hyperlinks (&lt;a&gt;):
+              <ul>
+                <li>
+                  The &lt;a&gt; element, also known as the anchor element, is
+                  used to create hyperlinks.
+                </li>
+                <li>
+                  Hyperlinks allow users to navigate between different web pages
+                  or resources on the internet.
+                </li>
+                <li>
+                  The href attribute within the &lt;a&gt; element specifies the
+                  URL of the destination page or resource.
+                </li>
+                <li>
+                  Hyperlinks can be styled using CSS to change their appearance,
+                  such as color and underline.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Images (&lt;img&gt;):
+              <ul>
+                <li>
+                  The &lt;img&gt; element is used to embed images into web
+                  pages.
+                </li>
+                <li>
+                  It is a self-closing tag, meaning it does not have a closing
+                  tag.
+                </li>
+                <li>
+                  The src attribute within the &lt;img&gt; element specifies the
+                  URL of the image to be displayed.
+                </li>
+                <li>
+                  Images can also have attributes like alt (alternative text)
+                  for accessibility and width/height for specifying dimensions.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Lists (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;):
+              <ul>
+                <li>
+                  Lists are used to group items together in a structured manner.
+                </li>
+                <li>
+                  &lt;ul&gt; (unordered list) is used to create bulleted lists.
+                </li>
+                <li>
+                  &lt;ol&gt; (ordered list) is used to create numbered lists.
+                </li>
+                <li>
+                  &lt;li&gt; (list item) is used to define individual items
+                  within a list.
+                </li>
+                <li>
+                  Lists can be nested within each other to create hierarchical
+                  structures.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Tables (&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;):
+              <ul>
+                <li>Tables are used to display data in rows and columns.</li>
+                <li>&lt;table&gt; element represents the entire table.</li>
+                <li>
+                  &lt;tr&gt; (table row) element defines a row within the table.
+                </li>
+                <li>
+                  &lt;td&gt; (table data/cell) element defines individual cells
+                  within a row.
+                </li>
+                <li>
+                  Tables can also include &lt;th&gt; (table header) elements to
+                  define header cells.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Containers (&lt;div&gt;, &lt;span&gt;):
+              <ul>
+                <li>
+                  &lt;div&gt; (division) element is a generic container used to
+                  group elements together.
+                </li>
+                <li>
+                  It is a block-level element, meaning it typically starts on a
+                  new line and takes up the full width available.
+                </li>
+                <li>
+                  &lt;span&gt; element is an inline container used to apply
+                  styling to a specific section of text or inline content.
+                </li>
+                <li>
+                  It does not introduce any line breaks and only takes up as
+                  much width as necessary.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </article>
       </section>
       <section id="attributes-and-values">
         <header>Attributes and Values</header>
+        <article></article>
       </section>
       <section id="forms-and-inputs">
         <header>Forms and Inputs</header>
+        <article></article>
       </section>
       <section id="semantic-html">
         <header>Semantic HTML</header>
+        <article></article>
       </section>
       <section id="html5-features">
         <header>HTML5 Features</header>
+        <article></article>
       </section>
       <section id="html-best-practices">
         <header>HTML Best Practices</header>
+        <article></article>
       </section>
       <section id="conclusion">
         <header>Conclusion</header>
+        <article></article>
       </section>
       <section id="references">
         <header>References</header>
+        <article></article>
       </section>
     </main>
   </body>
