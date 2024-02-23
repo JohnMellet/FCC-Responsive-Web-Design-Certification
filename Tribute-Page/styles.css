@@ -41,15 +41,18 @@ body {
   background-attachment: fixed;
   background-position: center;
   height: 100vh;
-}
 
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 90%;
+}
 /* Navbar */
 
 #nav-bar {
   height: 10vh;
   background-color: var(--Background);
   position: fixed;
-  width: 100vw;
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -87,7 +90,6 @@ body {
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
   height: 100vh;
-  background-color: var(--Background2);
 }
 
 #Sec1-title {
@@ -101,13 +103,17 @@ body {
   grid-column-start: 1;
   grid-row-end: 13;
   grid-column-end: 6;
-  margin-left: 3vw;
-  margin-left: 3dvw;
 }
-#Sec1-text {
+#Sec1-text1 {
   grid-row-start: 3;
   grid-column-start: 6;
-  grid-row-end: 10;
+  grid-row-end: 5;
+  grid-column-end: 13;
+}
+#Sec1-text2 {
+  grid-row-start: 5;
+  grid-column-start: 6;
+  grid-row-end: 9;
   grid-column-end: 13;
 }
 #Sec1-quote-container {
@@ -124,7 +130,7 @@ h1 {
   font-size: 3rem;
   border: 5px solid var(--Font-color1);
   border-radius: 10px;
-  width: 70vw;
+
   text-align: center;
   margin: auto;
   margin-top: 2vh;
@@ -149,6 +155,14 @@ h1 {
   padding: 10px;
   text-align: center;
   line-height: 2rem;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#Sec1-text2 p {
+  font-size: 0.75em;
 }
 
 .space {
@@ -173,39 +187,18 @@ h1 {
   background-position: center;
 }
 
-/* For tablet */
-@media (max-width: 768px) {
-  #Section-1 {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #Sec1-title,
-  #Sec1-image-container,
-  #Sec1-text,
-  #Sec1-quote-container {
-    width: 100%;
-  }
-}
-
-/* For phone */
-@media (max-width: 480px) {
-  #Section-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #Sec1-title,
-  #Sec1-image-container,
-  #Sec1-text,
-  #Sec1-quote-container {
-    width: 100%;
-  }
-}
 /* Section 2 */
+
+#background2 {
+  margin-right: -5%;
+  margin-left: -5%;
+
+  background-image: url("https://raw.githubusercontent.com/JohnMellet/Img-hosting/main/PubIMG/Image2.jpg");
+}
+
+#Section-2 {
+  margin-top: 10vh;
+}
 
 #charity {
   height: 70vh;
@@ -215,7 +208,6 @@ h1 {
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
   height: 100vh;
-  background-color: var(--Background2);
 }
 
 #dtitle {
@@ -228,13 +220,11 @@ h1 {
   font-size: 3rem;
   border: 5px solid var(--Font-color1);
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #dtext {
   background: var(--Background);
+  opacity: 0.85;
   grid-row-start: 3;
   grid-column-start: 1;
   grid-row-end: 13;
@@ -280,10 +270,17 @@ iframe {
   border: 5px solid var(--Font-color1);
 }
 
-h2 {
-  align-self: center;
-  margin-left: 3vw;
-  margin-left: 3dvw;
+#Section-2 h2 {
+  color: var(--Font-color1);
+  background-color: var(--Background);
+  font-family: var(--Text1);
+  font-size: 3rem;
+  border: 5px solid var(--Font-color1);
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  margin-top: 2vh;
+  padding: 10px;
 }
 
 .ftext {
@@ -326,69 +323,119 @@ h2 {
   font-size: 2rem;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  #charity {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    height: auto;
-  }
+/* ection 3 */
 
-  #dtitle {
-    grid-row-start: auto;
-    grid-column-start: auto;
-    grid-row-end: auto;
-    grid-column-end: auto;
-    font-size: 2rem;
-  }
+#Section-3 {
+  padding-top: 10vh;
+  height: 100vh;
 
-  #dtext {
-    grid-row-start: auto;
-    grid-column-start: auto;
-    grid-row-end: auto;
-    grid-column-end: auto;
-    margin-left: 0;
-    font-size: 1rem;
-  }
-
-  #video {
-    grid-row-start: auto;
-    grid-column-start: auto;
-    grid-row-end: auto;
-    grid-column-end: auto;
-    margin: 0;
-  }
-
-  #donate {
-    grid-row-start: auto;
-    grid-column-start: auto;
-    grid-row-end: auto;
-    grid-column-end: auto;
-    margin: 0;
-  }
-
-  iframe {
-    height: auto;
-    width: 100%;
-  }
-
-  h2 {
-    margin-left: 0;
-    font-size: 1.5rem;
-  }
-
-  #button {
-    padding: 3vh;
-    font-size: 1.5rem;
-  }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  gap: 10px;
 }
 
-/* Section 3 */
+#Section-3 h2 {
+  color: var(--Font-color1);
+  background-color: var(--Background);
+  font-family: var(--Text1);
+  font-size: 3rem;
+  border: 5px solid var(--Font-color1);
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  margin-top: 2vh;
+  padding: 10px;
+}
+
+#list-container {
+  background: var(--Background);
+  border: 5px solid var(--Font-color1);
+  border-radius: 10px;
+  flex-grow: 1;
+
+  display: flex;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+#more {
+  background: var(--Background);
+  border: 5px solid var(--Font-color1);
+  border-radius: 10px;
+  height: 10vh;
+}
+
+#list {
+  background-size: cover;
+  background-position: center;
+  color: var(--Font-color2);
+
+  margin: auto;
+  height: 100%;
+  width: 100%;
+
+  margin: 2% 3%;
+}
+
+.bullet {
+  margin: auto;
+  background: var(--Background);
+  opacity: 0.85;
+  list-style: none;
+
+  font-size: 2em;
+}
+
+#more-inf {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
 
 /* footer */
-#tribute-inf {
-  height: 100vh;
-  padding-top: 10vh;
+
+footer {
+  height: 10vh;
+  background: var(--Background);
+  margin-top: 2vh;
+  border: 5px solid var(--Font-color1);
+  border-radius: 10px;
+  display: flex;
+  color: var(--Font-color1);
+  font-size: x-large;
+}
+
+footer a {
+  color: var(--Font-color1);
 }
 
 /* "https://karsh.org/wordpress/wp-content/uploads/2020/10/Yousuf-Karsh-Desmond-Tutu-1984-1568x1960.jpg" */
