@@ -8,5 +8,6 @@ Titles: "Anton"         <link href="https://fonts.googleapis.com/css2?family=Ant
 Text: "Jost"            <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 code: "Source Code Pro" <link href="https://fonts.googleapis.com/css2?family=Anton&family=Jost:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
+background-color: #f7f7f7;
 
 
