@@ -76,18 +76,18 @@
             to stylesheets, and scripts. The &lt;body&gt; tag contains the
             content of the document that is displayed in the browser.
           </p>
-          <code>
-            &lt;!DOCTYPE html&gt;<br />
-            &lt;html&gt;<br />
-            &lt;head&gt;<br />
-            &lt;title&gt;Document Title&lt;/title&gt;<br />
-            &lt;/head&gt;<br />
-            &lt;body&gt;<br />
-            &lt;h1&gt;Hello, World!&lt;/h1&lt;/p&gt;<br />
-            &lt;p&gt;This is a basic HTML document.&lt;/p&gt;<br />
-            &lt;/body&gt;<br />
-            &lt;/html&gt;<br />
-          </code>
+          <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;Document Title&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;h1&gt;Hello, World!&lt;/h1&lt;/p&gt;
+            &lt;p&gt;This is a basic HTML document.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </pre>
         </article>
       </section>
       <section id="html-elements">
@@ -432,15 +432,399 @@
       </section>
       <section id="semantic-html">
         <header>Semantic HTML</header>
-        <article></article>
+        <article>
+          <p>
+            Semantic HTML refers to using HTML elements according to their
+            meaning and purpose rather than just for their presentation. It
+            improves the accessibility, SEO, and maintainability of web pages.
+          </p>
+          <ol>
+            <li>
+              &lt;header&gt;
+              <ul>
+                <li>
+                  Usage: Represents introductory content or a group of
+                  introductory or navigational aids.
+                </li>
+                <li>
+                  Example:
+                  <pre>
+                    &lt;header&gt;
+                    &lt;h1&gt;Website Nam&lt;/h1&gt;
+                    &lt;nav&gt;...&lt;/nav&gt;
+                    &lt;/header&gt;
+                  </pre>
+                </li>
+              </ul>
+            </li>
+            <li>
+              &lt;footer&gt;
+              <ul>
+                <li>
+                  Usage: Represents a footer for its nearest sectioning content
+                  or sectioning root element.
+                </li>
+                <li>
+                  Example:
+                  <pre>
+                    &lt;footer&gt;
+                    &lt;p&gt;&amp;copy; 2024 Website Name. All rights reserved.&lt;/p&gt;
+                    &lt;/footer&gt;
+                  </pre>
+                </li>
+              </ul>
+            </li>
+            <li>
+              &lt;nav&gt;
+              <ul>
+                <li>Usage: Represents a section of navigation links.</li>
+                <li>
+                  Example:
+                  <pre>
+                    &lt;nav&gt;
+                      &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/nav&gt;
+
+                </pre
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              &lt;article&gt;
+              <ul>
+                <li>Usage: Represents an independent piece of content.</li>
+                <li>
+                  Example:
+                  <pre>
+&lt;article&gt;&lt;h2&gt;Article Title&lt;/h2&gt;&lt;p&gt;Article content...&lt;/p&gt;&lt;/article&gt;</pre
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              &lt;section&gt;
+              <ul>
+                <li>Usage: Represents a thematic grouping of content.</li>
+                <li>
+                  Example:
+                  <pre>
+&lt;section&gt;&lt;h2&gt;Section Title&lt;/h2&gt;&lt;p&gt;Section content...&lt;/p&gt;&lt;/section&gt;</pre
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              &lt;aside&gt;
+              <ul>
+                <li>
+                  Usage: Represents content tangentially related to the content
+                  around it.
+                </li>
+                <li>
+                  Example:
+                  <pre>
+&lt;aside&gt;&lt;h3&gt;Related Links&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;</pre
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              &lt;main&gt;
+              <ul>
+                <li>Usage: Represents the main content of the document.</li>
+                <li>
+                  Example:
+                  <pre>
+&lt;main&gt;&lt;h1&gt;Main Content&lt;/h1&gt;&lt;p&gt;Main content...&lt;/p&gt;&lt;/main&gt;</pre
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              &lt;figure&gt; and &lt;figcaption&gt;
+              <ul>
+                <li>
+                  Usage: &lt;figure&gt; represents self-contained content, and
+                  &lt;figcaption&gt; provides a caption for it.
+                </li>
+                <li>
+                  Example:
+                  <pre>
+                    &lt;figure&gt;
+                      &lt;img src="example.jpg" alt="Example Image"&gt;
+                      &lt;figcaption&gt;Figure caption goes here.&lt;/figcaption&gt;
+                    &lt;/figure&gt;
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </article>
       </section>
       <section id="html5-features">
         <header>HTML5 Features</header>
-        <article></article>
+        <article>
+          <p>
+            HTML5 has significantly impacted modern web development in various
+            ways, particularly in enhancing multimedia support, improving
+            accessibility, and providing a better user experience. Here's how:
+          </p>
+          <ol>
+            <li>
+              <p>Enhanced Multimedia Support</p>
+              <ul>
+                <li>
+                  Native Video and Audio Support: HTML5 introduced native
+                  support for embedding video and audio content directly into
+                  web pages without the need for third-party plugins like Flash.
+                  This has led to more efficient and standardized ways of
+                  presenting multimedia content.
+                </li>
+                <li>
+                  Canvas and WebGL: HTML5 Canvas element allows dynamic,
+                  scriptable rendering of 2D shapes and bitmap images, enabling
+                  the creation of interactive games, data visualizations, and
+                  other rich multimedia applications. WebGL extends this
+                  capability to 3D graphics, enabling high-performance rendering
+                  of complex 3D scenes directly in the browser.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>Better Accessibility</p>
+              <ul>
+                <li>
+                  Semantic Elements: HTML5 introduced semantic elements like
+                  &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;,
+                  etc., which provide clearer structure and meaning to web
+                  documents. This helps assistive technologies like screen
+                  readers to better interpret and navigate the content,
+                  improving accessibility for users with disabilities.
+                </li>
+                <li>
+                  Form Enhancements: New form input types and attributes in
+                  HTML5, such as &lt;input type="email"&gt;, &lt;input
+                  type="tel"&gt;, &lt;input type="date"&gt;, etc., make it
+                  easier to create accessible and user-friendly web forms,
+                  enhancing the experience for users with various accessibility
+                  needs.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>Improved User Experience</p>
+              <ul>
+                <li>
+                  Responsive Design: HTML5, along with CSS3 and JavaScript,
+                  facilitates the development of responsive web designs that
+                  adapt to different screen sizes and devices. This ensures a
+                  consistent and optimal user experience across desktops,
+                  tablets, and smartphones.
+                </li>
+                <li>
+                  Offline Support: HTML5 introduced features like the
+                  Application Cache and Web Storage (localStorage and
+                  sessionStorage), enabling web applications to work offline and
+                  store data locally. This improves performance and user
+                  experience, especially in areas with poor or intermittent
+                  network connectivity.
+                </li>
+                <li>
+                  Geolocation API: HTML5's Geolocation API allows web
+                  applications to access the user's geographical location,
+                  enabling location-aware features and services, such as mapping
+                  applications, local search, and personalized content delivery.
+                </li>
+                <li>
+                  Drag and Drop: HTML5 Drag and Drop API simplifies the
+                  implementation of drag-and-drop functionality within web
+                  applications, enhancing interactivity and making tasks like
+                  file uploads and content reordering more intuitive for users.
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <p>
+            In summary, HTML5 has revolutionized modern web development by
+            providing native support for multimedia, improving accessibility,
+            and delivering a richer and more interactive user experience across
+            various devices and platforms. Its features and capabilities
+            continue to shape the landscape of web development, driving
+            innovation and enabling the creation of more engaging and accessible
+            web experiences.
+          </p>
+          <ol>
+            <li>
+              <p>&lt;video&gt;</p>
+              <ul>
+                <li>
+                  Functionality: Allows embedding video content directly into
+                  web pages.
+                </li>
+                <li>
+                  Applications: Used for delivering video content such as
+                  tutorials, presentations, advertisements, and entertainment
+                  media.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>&lt;audio&gt;</p>
+              <ul>
+                <li>
+                  Functionality: Enables embedding audio content directly into
+                  web pages.
+                </li>
+                <li>
+                  Applications: Used for playing audio files, including music,
+                  podcasts, sound effects, and audio-based interactive elements.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>&lt;canvas&gt;</p>
+              <ul>
+                <li>
+                  Functionality: Provides a drawing surface for creating dynamic
+                  graphics and animations using JavaScript.
+                </li>
+                <li>
+                  Applications: Used for creating interactive games, data
+                  visualizations, charts, graphs, image editing tools, and other
+                  multimedia applications.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>&lt;svg&gt;</p>
+              <ul>
+                <li>
+                  Functionality: Defines scalable vector graphics for rendering
+                  2D graphics and animations within HTML content.
+                </li>
+                <li>
+                  Applications: Used for creating high-quality graphics, icons,
+                  logos, maps, and interactive illustrations that scale
+                  seamlessly across different screen sizes and resolutions.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>&lt;progress&gt;</p>
+              <ul>
+                <li>
+                  Functionality: Represents the progress of a task or operation.
+                </li>
+                <li>
+                  Applications: Used to visualize the completion status of
+                  tasks, file uploads, form submissions, or any process with a
+                  defined duration.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>&lt;meter&gt;</p>
+              <ul>
+                <li>
+                  Functionality: Represents a scalar measurement within a known
+                  range.
+                </li>
+                <li>
+                  Applications: Used to display ratings, scores, progress bars,
+                  or any measurable value within a specified range, such as user
+                  ratings, battery levels, or file sizes.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>&lt;details&gt; and &lt;summary&gt;</p>
+              <ul>
+                <li>
+                  Functionality: &lt;details&gt; creates a disclosure widget
+                  that can be toggled to show/hide additional content, while
+                  &lt;summary&gt; defines the summary or title of the disclosure
+                  widget.
+                </li>
+                <li>
+                  Applications: Used for creating collapsible sections, dropdown
+                  menus, expandable FAQ sections, or any content that can be
+                  hidden initially and revealed on demand.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>&lt;time&gt;</p>
+              <ul>
+                <li>
+                  Functionality: Represents a specific point in time or a
+                  duration.
+                </li>
+                <li>
+                  Applications: Used for displaying dates, times, or durations
+                  in a machine-readable format, enhancing accessibility and
+                  search engine optimization.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>&lt;datalist&gt;</p>
+              <ul>
+                <li>
+                  Functionality: Provides a predefined list of options for input
+                  elements like &lt;input&gt; and &lt;select&gt;.
+                </li>
+                <li>
+                  Applications: Used to create auto-complete or suggestion lists
+                  for form inputs, improving user experience and efficiency when
+                  filling out forms.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </article>
       </section>
       <section id="html-best-practices">
         <header>HTML Best Practices</header>
-        <article></article>
+        <article>
+          <h1>Proper Indentation and Code Organization</h1>
+          <p>
+            Maintaining clean and organized HTML code is crucial for readability
+            and maintainability of web projects. Proper indentation and code
+            organization improve the code's readability, making it easier for
+            developers to understand and modify. It also enhances collaboration
+            among team members by providing a consistent structure and
+            formatting conventions.
+          </p>
+
+          <h1>Importance of Semantic HTML for Accessibility and SEO</h1>
+          <p>
+            Semantic HTML plays a vital role in improving accessibility and
+            search engine optimization (SEO). By using semantic elements like
+            &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;, etc., web
+            developers provide meaningful structure to web documents, making
+            them more accessible to users with disabilities who rely on
+            assistive technologies like screen readers. Additionally, semantic
+            HTML helps search engines understand the content and context of web
+            pages better, leading to improved search engine rankings and
+            visibility.
+          </p>
+
+          <h1>Cross-Browser Compatibility Considerations</h1>
+          <p>
+            Ensuring cross-browser compatibility is essential to deliver a
+            consistent user experience across different web browsers and
+            devices. Web developers need to test their web pages rigorously
+            across popular browsers such as Chrome, Firefox, Safari, Edge, and
+            Internet Explorer, as well as various versions of these browsers.
+            Testing helps identify and resolve compatibility issues related to
+            CSS rendering, JavaScript functionality, and HTML layout, ensuring
+            that the web pages look and work as intended for all users.
+          </p>
+        </article>
       </section>
       <section id="conclusion">
         <header>Conclusion</header>
