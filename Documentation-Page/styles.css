@@ -2,4 +2,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* fonts */
+  --Title-font: "Anton", sans-serif;
+  --Text-font: "Jost", sans-serif;
+  --Code-font: "Source Code Pro", monospace;
+
+  /* font color */
+  --Title-color: black;
+  --Text-color: #4d4e53;
+
+  /* Backgrounds */
+  --Background: #ffffff;
+  --CodeSnippet: #f7f7f7;
+}
+
+body {
+  font-family: var(--Text-font);
+  background-color: var(--Background);
+  color: var(--Text-color);
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+header {
+  color: var(--Title-color);
+  font-size: 2rem;
+  font-family: var(--Title-font);
+}
+
+#navbar {
+  position: fixed;
+  width: 20vw;
+  border-right: solid;
+  height: 100%;
+}
+
+#main-doc {
+  position: absolute;
+  left: 22vw;
+}
+
+pre {
+  font-family: var(--Code-font);
+  background: var(--CodeSnippet);
+  padding: 0.2rem;
+  border-radius: 5px;
+  font-family: var(--Code-font);
 }
