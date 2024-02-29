@@ -26,6 +26,7 @@ body {
   color: var(--Text-color);
   line-height: 1.6;
   font-size: 1.1rem;
+  width: 70vw;
 }
 
 header {
@@ -36,14 +37,28 @@ header {
 
 #navbar {
   position: fixed;
-  width: 20vw;
+  max-width: 20vw;
   border-right: solid;
   height: 100%;
 }
 
+#navbar li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--Text-color);
+  padding-left: 1em;
+}
+
+#navbar li {
+  border-top: 2px solid;
+}
+
 #main-doc {
   position: absolute;
-  left: 22vw;
+  margin-left: 22vw;
+  padding-bottom: 5vh;
+  max-width: 75vw;
 }
 
 pre {
@@ -52,4 +67,25 @@ pre {
   padding: 0.2rem;
   border-radius: 5px;
   font-family: var(--Code-font);
+  white-space: pre-line;
+  text-align: left;
+}
+
+header {
+  margin: 0.5rem;
+}
+
+#main-doc header {
+  margin-left: -1vw;
+}
+
+#main-doc p {
+  margin: 0.3em;
+}
+
+section li {
+  margin: 0.7em 0.3em 0em 0.7em;
+}
+
+@media (max-width: 1100px) {
 }
