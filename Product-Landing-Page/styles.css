@@ -2,4 +2,152 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bi: url("https://raw.githubusercontent.com/JohnMellet/Img-hosting/main/PubIMG/Designer1.jpg");
+}
+
+#bi {
+  background-image: var(--bi);
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+#snip {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  max-height: 60%;
+  width: auto;
+  margin: 0 -75px;
+
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+/* Nav-Bar */
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0a0921;
+  align-items: center;
+  padding: 10px;
+}
+
+#header-img {
+  max-height: 5vh;
+  max-width: 30vw;
+}
+
+#nav-bar {
+  min-width: 40vw;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+ul button {
+  background-color: orangered;
+}
+
+/* First Section */
+
+/* #snip {
+    height: 250px;
+    width: 500px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin-bottom: 20vh;
+    margin-right: -100px;
+} */
+
+#intro {
+  margin-top: 15vh;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  color: rgb(237, 225, 225);
+  font-size: 4rem;
+  font-family: "Madimi One", sans-serif;
+  max-width: 50vw;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#email {
+  min-width: 20vw;
+  height: 5vh;
+  align-self: center;
+  text-align: center;
+
+  font-size: large;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+#entry {
+  width: 50vw;
+}
+
+#submit {
+  align-self: center;
+  width: 10vw;
+  height: 7vh;
+  background-color: rgb(255, 191, 0);
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: 900;
+  border: 5px solid rgb(248, 248, 246);
+}
+
+#test {
+  height: 40vh;
+}
+
+#Section-2 {
+  height: 100vh;
+  background-color: black;
 }
