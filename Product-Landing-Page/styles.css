@@ -163,3 +163,13 @@ ul button {
   height: 100vh;
   background-color: black;
 }
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.testimonial p {
+  height: 100%;
+}
