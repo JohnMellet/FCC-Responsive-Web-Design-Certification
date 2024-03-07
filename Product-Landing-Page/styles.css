@@ -107,6 +107,10 @@ ul button {
   text-align: center;
 }
 
+#code {
+  font-family: "Roboto Slab", serif;
+}
+
 #form {
   display: flex;
   flex-direction: column;
