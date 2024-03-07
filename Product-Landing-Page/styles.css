@@ -149,6 +149,14 @@ ul button {
 
 #test {
   height: 40vh;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.stockimg {
+  max-height: 30vh;
 }
 
 #Section-2 {
