@@ -9,6 +9,10 @@
   --bi: url("https://raw.githubusercontent.com/JohnMellet/Img-hosting/main/PubIMG/Designer1.jpg");
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #bi {
   background-image: var(--bi);
   min-height: 80vh;
@@ -151,12 +155,11 @@ ul button {
   height: 40vh;
 
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
 }
 
 .stockimg {
-  max-height: 30vh;
+  max-width: 20vw;
 }
 
 #Section-2 {
