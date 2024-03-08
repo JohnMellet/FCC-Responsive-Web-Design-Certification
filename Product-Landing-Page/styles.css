@@ -153,7 +153,7 @@ ul button {
 
 #test {
   height: 40vh;
-
+  justify-content: space-around;
   display: flex;
   flex-direction: row;
 }
@@ -171,8 +171,12 @@ ul button {
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-width: 15vw;
+
+  border: 5px solid red;
 }
 
 .testimonial p {
-  height: 100%;
+  font-size: 1.2em;
+  /* need to add font family */
 }
