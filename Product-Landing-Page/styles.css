@@ -174,9 +174,12 @@ ul button {
   max-width: 15vw;
 
   border: 5px solid red;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .testimonial p {
   font-size: 1.2em;
-  /* need to add font family */
+  font-weight: 600;
+  font-family: "Prompt", sans-serif;
 }
