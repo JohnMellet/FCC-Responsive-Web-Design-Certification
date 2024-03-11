@@ -209,6 +209,8 @@ nav li {
 #video {
   display: block;
   margin: 10vh;
+  min-width: 40vw;
+  height: 30vh;
 }
 
 #sec2-text {
@@ -255,6 +257,8 @@ nav li {
   }
 
   .testimonial {
+    min-width: 50vw;
+    align-items: center;
   }
 
   #learn {
