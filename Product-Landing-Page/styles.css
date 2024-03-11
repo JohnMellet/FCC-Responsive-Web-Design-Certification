@@ -152,11 +152,15 @@ ul button {
   border: 5px solid rgb(248, 248, 246);
 }
 
+/* image bar */
+
 #test {
   height: 40vh;
   justify-content: space-around;
   display: flex;
   flex-direction: row;
+  background: var(--bc);
+  color: white;
 }
 
 .stockimg {
@@ -166,11 +170,11 @@ ul button {
 .testimonial {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  max-width: 15vw;
+  max-width: 20vw;
 
-  border: 5px solid red;
-  border-radius: 15px;
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
   padding: 5px;
 }
 
@@ -178,6 +182,8 @@ ul button {
   font-size: 1.2em;
   font-weight: 600;
   font-family: "Prompt", sans-serif;
+  text-align: center;
+  margin: auto;
 }
 
 /* Section 2 */
@@ -218,7 +224,7 @@ ul button {
   font-family: "Roboto Slab", serif;
 }
 
-@media (max-width: 1410px) {
+@media (max-width: 1600px) {
   #snip {
     display: none;
   }
@@ -227,5 +233,8 @@ ul button {
     display: flex;
     margin: auto;
     align-items: center;
+  }
+
+  #section-2 {
   }
 }
