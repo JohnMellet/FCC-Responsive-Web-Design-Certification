@@ -31,7 +31,8 @@ body {
   right: 0;
 
   max-height: 60%;
-  width: auto;
+  max-width: 50vw;
+
   margin: 0 -75px;
 
   border: 3px solid white;
@@ -79,8 +80,17 @@ nav a {
   font-size: 1.4em;
 }
 
-ul button {
-  background-color: orangered;
+nav li {
+  padding: 1vh 2vw;
+}
+
+#sign-up {
+  padding: 1vh 2vw;
+  background-color: rgb(255, 191, 0);
+  border-style: none;
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* First Section */
@@ -97,7 +107,7 @@ ul button {
     margin-right: -100px;
 } */
 
-#intro {
+#home {
   margin-top: 15vh;
   margin-left: 10vw;
   display: flex;
@@ -106,7 +116,7 @@ ul button {
 
 #title {
   color: rgb(237, 225, 225);
-  font-size: 4rem;
+  font-size: 4vw;
   font-family: "Madimi One", sans-serif;
   max-width: 50vw;
   text-align: center;
@@ -143,7 +153,9 @@ ul button {
   background-color: rgb(255, 191, 0);
   color: white;
   font-size: 1.5rem;
-  border: none;
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
   cursor: pointer;
 
   border-radius: 10px;
@@ -154,8 +166,8 @@ ul button {
 
 /* image bar */
 
-#test {
-  height: 40vh;
+#about {
+  height: 50vh;
   justify-content: space-around;
   display: flex;
   flex-direction: row;
@@ -176,6 +188,7 @@ ul button {
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
   padding: 5px;
+  margin-top: 5vh;
 }
 
 .testimonial p {
@@ -188,7 +201,7 @@ ul button {
 
 /* Section 2 */
 
-#Section-2 {
+#learn {
   background: var(--bc);
 
   display: flex;
@@ -196,7 +209,7 @@ ul button {
   justify-content: space-evenly;
 }
 
-#sec2-vid {
+#video {
   display: block;
   margin: 10vh;
 }
@@ -224,17 +237,8 @@ ul button {
   font-family: "Roboto Slab", serif;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1365) {
   #snip {
     display: none;
-  }
-
-  #intro {
-    display: flex;
-    margin: auto;
-    align-items: center;
-  }
-
-  #section-2 {
   }
 }
