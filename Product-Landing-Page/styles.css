@@ -12,6 +12,7 @@
 
 body {
   overflow-x: hidden;
+  background: var(--bc);
 }
 
 #bi {
@@ -148,11 +149,10 @@ nav li {
 
 #submit {
   align-self: center;
-  width: 10vw;
-  height: 7vh;
+  padding: 1vh 2vw;
   background-color: rgb(255, 191, 0);
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   border: 3px solid white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
@@ -171,7 +171,6 @@ nav li {
   justify-content: space-around;
   display: flex;
   flex-direction: row;
-  background: var(--bc);
   color: white;
 }
 
@@ -202,8 +201,6 @@ nav li {
 /* Section 2 */
 
 #learn {
-  background: var(--bc);
-
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -237,8 +234,35 @@ nav li {
   font-family: "Roboto Slab", serif;
 }
 
-@media (max-width: 1365) {
+@media (max-width: 1365px) {
   #snip {
     display: none;
+  }
+
+  #bi {
+    justify-content: center;
+  }
+
+  #home {
+    margin: 0;
+    align-items: center;
+  }
+
+  #about {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .testimonial {
+  }
+
+  #learn {
+    flex-direction: column;
+    margin-top: 5vh;
+  }
+
+  #video {
+    margin: auto;
   }
 }
