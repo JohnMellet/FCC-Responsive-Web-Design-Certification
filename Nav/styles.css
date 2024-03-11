@@ -1,0 +1,5 @@
+.nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
