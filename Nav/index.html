@@ -4,26 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-
-    <script></script>
     <title>Nav Bar Template</title>
   </head>
   <body>
     <header>
       <nav class="nav">
-        <h1 id="logo">Logo</h1>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+        <a href="#" class="logo">Logo</a>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
         </ul>
-        <div id="Hamburger">
+        <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
       </nav>
     </header>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navList = document.querySelector(".nav-list");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navList.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
