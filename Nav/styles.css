@@ -72,9 +72,9 @@ nav {
   }
 
   .nav-list {
-    margin-top: 10vh;
     position: fixed;
     left: -100%;
+    top: 10vh;
     gap: 0;
     flex-direction: column;
     background-color: #262626;
