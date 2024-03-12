@@ -70,8 +70,8 @@ nav {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
-  .nav-list {
+  /* left */
+  /* .nav-list {
     position: fixed;
     left: -100%;
     top: 10vh;
@@ -81,13 +81,27 @@ nav {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+  } */
+
+  /* top */
+  .nav-list {
+    margin-top: 10vh;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.8s;
   }
 
   .nav-item {
     margin: 16px 0;
   }
 
-  .nav-list.ative {
-    left: 0;
+  .nav-list.active {
+    top: 0;
   }
 }
